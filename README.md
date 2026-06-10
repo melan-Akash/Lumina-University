@@ -73,29 +73,7 @@ cd ../client
 npm install
 ```
 
-### 3. Environment Variables
-
-Create a `.env` file in the **`server`** directory with the following keys:
-
-```env
-PORT=5000
-MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/uni
-JWT_SECRET=your_super_secret_jwt_key
-NODE_ENV=development
-
-# Cloudinary Setup
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-
-# Email Setup (for Enquiries/Nodemailer)
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-```
-
-### 4. Seed the Database
+### 3. Seed the Database
 
 Before starting, you should generate an initial Super Admin account to access the dashboard. 
 
@@ -105,7 +83,7 @@ node seed.js
 ```
 *This will create an admin with the email `admin@lumina.ac.uk` and password `Admin@1234` (unless configured otherwise).*
 
-### 5. Run the Application
+### 4. Run the Application
 
 You will need two terminal windows open to run the client and server concurrently.
 
